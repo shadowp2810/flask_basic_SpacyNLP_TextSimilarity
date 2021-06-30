@@ -1,0 +1,22 @@
+Registration of a user 
+Detect Similarity
+Refill tokens
+
+
+#### Resource Method Chart
+
+Resource
+Address
+Protocol
+Param
+Response and Status codes
+
+| Resource | Address | Protocol | Param | Response and Status codes |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Register User | /register | POST | username:str,pasword:str | 200 ok, 301 invalid username |
+| Detect Similarity | /detect | POST | username:str,pasword:str,text1:str,text2:str | 200 ok, 301 invalid username, 302 invalid password, 303 out of tokens |
+| Refill Tokens | /refill | POST | username:str,adminPasword:str,refillAmount:int | 200 ok, 301 invalid username, 304 invalid adminPassword |
+
+
+
+
